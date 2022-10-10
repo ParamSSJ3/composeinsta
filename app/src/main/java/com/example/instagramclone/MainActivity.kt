@@ -1,6 +1,7 @@
 package com.example.instagramclone
 
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -66,6 +67,7 @@ NavHost(navController = navController, startDestination = NavigationItem.Home.ro
 
 
 
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun Navigation() {
 val navController = rememberNavController()
