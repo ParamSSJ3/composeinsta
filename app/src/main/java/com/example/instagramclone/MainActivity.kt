@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -34,7 +35,6 @@ class MainActivity : ComponentActivity() {
                       color= Color.Black
                   )
               }
-
             }
             HomeScreen()
             Navigation()
@@ -102,14 +102,6 @@ val navController = rememberNavController()
     }
 }
 
-@Composable
-fun Search() {
-    Column(modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "Search")
-    }
-}
 
 @Composable
 fun Notifications() {
